@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 import pickle
 
 # Assuming your trained chatbot model is stored in a pickle file.
-with open('chatbot_model.pkl', 'rb') as f:
+with open('chatbot_model_improved.pkl', 'rb') as f:
     model = pickle.load(f)
 
 # Initialize Flask app
