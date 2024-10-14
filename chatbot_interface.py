@@ -23,13 +23,13 @@ bg_color = "#f0f0f0"
 text_color = "#333333"
 entry_bg_color = "#ffffff"
 button_bg_color = "#008CBA"
-
+button_text_color = "black"
 root.configure(bg=bg_color)
 
 # Configure styles
 style = ttk.Style()
 style.configure("TEntry", relief="flat", padding=5)
-style.configure("TButton", relief="flat", padding=5, background=button_bg_color, foreground=entry_bg_color, font=("Helvetica Neue", 12))
+style.configure("TButton", relief="flat", padding=5, background=button_bg_color, foreground=button_text_color, font=("Helvetica Neue", 12))
 
 # Create chat window
 chat_window = scrolledtext.ScrolledText(root, state=tk.DISABLED, wrap=tk.WORD, width=60, height=20, bg=entry_bg_color, fg=text_color, font=("Helvetica Neue", 12), relief=tk.FLAT, bd=0, padx=10, pady=10)
